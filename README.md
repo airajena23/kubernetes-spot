@@ -1,8 +1,8 @@
-<img src="images/puclogo.jpeg" align="right" />
+
 
 # Run your Kubernetes Workloads on Amazon EC2 Spot Instances 
 
-> Reference: https://aws.amazon.com/blogs/compute/run-your-kubernetes-workloads-on-amazon-ec2-spot-instances-with-amazon-eks/
+
 
 ## Provision EKS Worker Nodes
 With Spot Instances, each instance type in each Availability Zone is a pool with its own Spot price based on the available capacity. A recommended best practice when working with Spot Instances is to use a diversified fleet of instances with multiple instance types, as created by Spot Fleet or EC2 Fleet. Unfortunately, Cluster Autoscaler does not support Spot Fleets at this time. You need a different strategy to provide diversification. Cluster Autoscaler for AWS provides integration with Auto Scaling groups.
